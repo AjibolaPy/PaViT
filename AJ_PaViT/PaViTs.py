@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[2]:
-
-
 from tensorflow.keras.layers import *
 import pandas as pd
 import numpy as np
@@ -20,15 +16,7 @@ from keras.activations import swish
 from keras.preprocessing.image import *
 from tensorflow.image import extract_patches
 
-
-# In[3]:
-
-
 num_patches=224//3
-
-
-# In[3]:
-
 
 class patches(Layer):
     def __init__(self,patch_size ):
@@ -42,12 +30,6 @@ class patches(Layer):
         patch=extract_patches(images=x,strides=[1, self.patch_size, self.patch_size, 1] ,sizes=[1, self.patch_size, self.patch_size, 1],rates=[1, 1, 1,1], padding='VALID')
         return patch
     
-
-
-
-# In[9]:
-
-
 def encoder(x, dim=32,pos:bool=True):
     lin_proj=Dense(dim, activation='relu')
     if pos:
@@ -65,8 +47,6 @@ def Mlp(x, n:int=8, dim=32):
     
     return x
 
-
-# In[79]:
 
 
 class PaViT:
@@ -114,8 +94,3 @@ class PaViT:
         except: 
             print('Cant load model without last layer. \nInitialize model first')
     
-model=PaViT()
-mox=model.model()
-mox.summary()
-#mox.load_weights('C:\\Users\\Emmanuel\\Downloads\\PAVIT_weights.h5')
-

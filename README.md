@@ -1,5 +1,5 @@
-<h1>About:</h1><br>
-README for Pathway Vision Transformer
+<h1>README for Pathway Vision Transformer</h1><br>
+
 
 <p>PaViT is a Pathway Vision Transformer (PaViT)-based image recognition model developed by Ajibola Emmanuel Oluwaseun. The model is inspired by Google's PaLM (Pathways Language Model) and aims to demonstrate the potential of using few-shot learning techniques in image recognition tasks.</p>
 
@@ -10,9 +10,9 @@ PaViT was trained on a 4GB RAM CPU using a dataset of 15000 Kaggle images of 15 
 The model can be used for image recognition tasks by using the trained weights provided in the repository. The code can be modified to use custom datasets, and the model's performance can be further improved by adding more self-attention heads and linear layers.
 
 <h1>Contribution</h1>
-The author believes that PaViT has the potential to outperform existing Vision Transformer models and is eager to see it continue to evolve through the contributions of developers and other contributors.<br><br/>
-
-Contributions to the project are welcome and can be made through pull requests. Developers can also report issues or suggest new features for the project.
+The author believes that PaViT has the potential to outperform existing Vision Transformer models and is eager to see it continue to evolve through the contributions of developers and other contributors.
+<br>
+Contributions to the project are welcome and can be made through pull requests. Developers can also report issues or suggest new features for the project.</br>
 
 <h1>License</h1>
 The project is licensed under the MIT License.

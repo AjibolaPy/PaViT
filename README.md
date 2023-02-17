@@ -16,7 +16,7 @@ image=cv2.cvtColor(image, cv2.COLOR_BGR2RGB) #Convert image to RGB
 imahe=cv2.resize(224, 224) #Deafult image size
 model=load_model('trained_weight.h5') #Load weight
 prediction=model.predict(image) #run inference
-prediction=np.argmax(predication, axis=-1) #Show highest probability class
+prediction=np.argmax(prediction, axis=-1) #Show highest probability class
 ```
 <br>On Training</br>
 ```ruby

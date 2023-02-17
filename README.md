@@ -2,9 +2,9 @@ The Pathway Vision Transformer (PaViT), developed by Ajibola Emmanuel Oluwaseun,
 
 
 
-How to use:
+<h1>How to use:</h1>
 <br>
-#On inference
+On inference
 ```ruby
 import PaViT 
 import cv2

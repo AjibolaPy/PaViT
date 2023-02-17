@@ -22,7 +22,7 @@ prediction=np.argmax(prediction, axis=-1) #Show highest probability class
 ```ruby
 
 model=PaViT.PaviT(out=15, activation='sigmoid') #output dense_layer is 15, output activation 15
-model.load_weights('trained_weight.h5)
+model.load_weights('trained_weight.h5')
 model.compile(...)
 model.fit(...)
 ```

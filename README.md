@@ -4,7 +4,7 @@
 <p>PaViT is a Pathway Vision Transformer (PaViT)-based image recognition model developed by Ajibola Emmanuel Oluwaseun. The model is inspired by Google's PaLM (Pathways Language Model) and aims to demonstrate the potential of using few-shot learning techniques in image recognition tasks.</p>
 
 <h1>Model Performance</h1>
-PaViT was trained on a 4GB RAM CPU using a dataset of 15000 Kaggle images of 15 classes, achieving a remarkable 88% accuracy with 4 self-attention heads. The model's accuracy further improved to 96% when trained with 12 self-attention heads and 8 linearly stacked linear layers. These results demonstrate the model's impressive performance and fast training speed on a CPU, despite being trained on a relatively small dataset.
+PaViT was trained on a 4GB RAM CPU using a dataset of 15000 Kaggle images of 15 classes, achieving a remarkable 88% accuracy with 4 self-attention heads. The model's accuracy further improved to 96% when trained with 12 self-attention heads and 12 linearly stacked linear layers. These results demonstrate the model's impressive performance and fast training speed on a CPU, despite being trained on a relatively small dataset.
 
 <h1>Usage</h1>
 The model can be used for image recognition tasks by using the trained weights provided in the repository. The code can be modified to use custom datasets, and the model's performance can be further improved by adding more self-attention heads and linear layers.

@@ -28,18 +28,22 @@ import cv2
 from tensorflow.keras.models import *
 image=cv2.imread(image) #Load image
 image=cv2.cvtColor(image, cv2.COLOR_BGR2RGB) #Convert image to RGB
-imahe=cv2.resize(224, 224) #Deafult image size
+image=cv2.resize(224, 224) #Default image size
 model=load_model('trained_weight.h5') #Load weight
 prediction=model.predict(image) #run inference
 prediction=np.argmax(prediction, axis=-1) #Show highest probability class
 ```
 <br>On Training</br>
 ```ruby
+model=newest_pavit.PaViT() 
 
-model=PaViT.PaviT(out=15, activation='sigmoid') #output dense_layer is 15, output activation 15
-model.load_weights('trained_weight.h5')
-model.compile(...)
-model.fit(...)
+#Output means the out_layer default is dense with unit of 15 anf activation 'sigmoid'
+p_model=model.model(output_class=15, activation='softmax', output=None) 
+
+p_model.summary()
+p_model.compile(...)
+p_model.fit(...)
+
 ```
 
 

@@ -3,7 +3,7 @@ The Pathway Vision Transformer (PaViT), developed by Ajibola Emmanuel Oluwaseun,
 
 
 How to use:
-'\n'
+<br>
 #On inference
 ```ruby
 import PaViT 

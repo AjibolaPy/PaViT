@@ -1,6 +1,21 @@
 <h1>About:</h1><br>
-Pathway Vision Transformer (PaViT), developed by Ajibola Emmanuel Oluwaseun, draws inspiration from Google's PaLM (Pathways Language Model) and seeks to replicate the success of few-shot learning techniques in natural language tasks to the field of image recognition. After training PaViT on a 4GB RAM CPU using a dataset of 2000 Kaggle images of 4 classes, the model demonstrated remarkable results. With 4 self-attention heads, PaViT achieved a 74% accuracy and further improved to 87% accuracy with the addition of 10 self-attention heads and linear layers. These results not only highlight the model's fast training speed on a CPU, but also its potential to outperform existing Vision Transformer models. The author believes that with continued development and contributions from the community, PaViT has the potential to be a leading model in the field of image recognition. Used Batch normalization layer and got better performance compared to the custom layer normalisation, also used 12 self attention heads and 18 linearly stacked Dense layer to get best accuracy yet on the same dataset and had about 90% accuracy. Later trained it on a larger dataset of 15000 Kaggle plant images with 15 classes with Google Colab NVIDIA T4 Tensor Core GPUs and got 96% accuracy.."
+README for [Pathway Vision Transformer]
 
+PaViT is a Pathway Vision Transformer (PaViT)-based image recognition model developed by Ajibola Emmanuel Oluwaseun. The model is inspired by Google's PaLM (Pathways Language Model) and aims to demonstrate the potential of using few-shot learning techniques in image recognition tasks.
+
+<h1>Model Performance</h1>
+PaViT was trained on a 4GB RAM CPU using a dataset of 15000 Kaggle images of 15 classes, achieving a remarkable 88% accuracy with 4 self-attention heads. The model's accuracy further improved to 96% when trained with 12 self-attention heads and 8 linearly stacked linear layers. These results demonstrate the model's impressive performance and fast training speed on a CPU, despite being trained on a relatively small dataset.
+
+<h1>Usage</h1>
+The model can be used for image recognition tasks by using the trained weights provided in the repository. The code can be modified to use custom datasets, and the model's performance can be further improved by adding more self-attention heads and linear layers.
+
+<h1>Contribution</h1>
+The author believes that PaViT has the potential to outperform existing Vision Transformer models and is eager to see it continue to evolve through the contributions of developers and other contributors.<br>
+
+Contributions to the project are welcome and can be made through pull requests. Developers can also report issues or suggest new features for the project.
+
+<h1>License</h1>
+The project is licensed under the <a MIT License.>
 
 
 <h1>How to use:</h1>

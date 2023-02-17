@@ -36,10 +36,8 @@ prediction=np.argmax(prediction, axis=-1) #Show highest probability class
 <br>On Training</br>
 ```ruby
 model=newest_pavit.PaViT() 
-
 #Output means the out_layer default is dense with unit of 15 anf activation 'sigmoid'
 p_model=model.model(output_class=15, activation='softmax', output=None) 
-
 p_model.summary()
 p_model.compile(...)
 p_model.fit(...)

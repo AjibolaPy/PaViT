@@ -47,8 +47,6 @@ def Mlp(x, n:int=8, dim=32):
     
     return x
 
-
-
 class PaViT:
     def __init__(self, shape=(224, 224, 3),num_heads=12, patch_size=32, dim=126, pos_emb:bool =False, 
                  mlp_it=8, attn_drop:int= .3, dropout:bool=True):
@@ -83,11 +81,9 @@ class PaViT:
         else: 
             out=output_class(flat)
         
-        
         self.without_head=Model(inp, norm)
         return Model(inp, out)
-    
-    
+
     def remove_head(self):
         try:
             return self.without_head 

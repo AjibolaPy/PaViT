@@ -46,4 +46,8 @@ p_model.fit(...)
 
 ```
 
+<h1>Prediction on Test data</h1>
+<img scr='test.png' alt='test image'>
+
+
 
